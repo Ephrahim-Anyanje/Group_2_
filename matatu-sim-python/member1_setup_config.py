@@ -1,6 +1,4 @@
-"""
-MEMBER 1: Project setup, window, constants, colors, and shared drawing helpers.
-"""
+
 
 import pygame
 
