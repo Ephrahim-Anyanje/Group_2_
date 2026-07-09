@@ -1,13 +1,4 @@
-// Entry point for the C++/SFML port of the Autonomous Matatu Conductor
-// Monitoring System. This plays the same role as index.html in the JS
-// version: it "loads" each member's module (via includes, in the required
-// order) and drives the main loop.
-//
-// Build (see build.sh):
-//   g++ -std=c++17 *.cpp -o matatu_sim -lsfml-graphics -lsfml-window -lsfml-system
-//
-// Run:
-//   ./matatu_sim
+
 
 #include "member1_setup_config.h"
 #include "member2_matatu_controls.h"
