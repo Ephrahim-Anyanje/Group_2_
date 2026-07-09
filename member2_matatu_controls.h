@@ -1,4 +1,4 @@
-// MEMBER 2: Matatu state, keyboard controls, braking, lane changes, and reset.
+
 #pragma once
 
 #include "member1_setup_config.h"
@@ -46,7 +46,6 @@ sf::FloatRect matatuRect();
 void resetSimulation();
 void changeLane(int direction);
 
-// Called by the main loop (which owns the SFML event loop, same role as
-// index.html's <script> wiring for the browser's keydown/keyup listeners).
+
 void handleKeyPressed(sf::Keyboard::Key key);
 void handleKeyReleased(sf::Keyboard::Key key);
