@@ -1,4 +1,4 @@
-// MEMBER 4: Road, matatu, obstacle, and scene rendering.
+
 #pragma once
 
 #include "member3_obstacles_physics.h"
