@@ -1,4 +1,4 @@
-// MEMBER 5: Conductor dashboard, camera feed, metrics, and game-over screen.
+
 #pragma once
 
 #include "member3_obstacles_physics.h"
