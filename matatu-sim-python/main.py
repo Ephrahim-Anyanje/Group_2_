@@ -8,7 +8,7 @@ import member1_setup_config as m1
 import member2_matatu_controls as m2
 import member3_obstacles_physics as m3
 import member4_road_rendering as m4
-import member5_dashboard_camera as m5  # noqa: F401  (registers panel/game-over drawers)
+import member5_dashboard_camera as m5 
 
 
 def main():
