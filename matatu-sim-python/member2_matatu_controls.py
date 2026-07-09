@@ -1,6 +1,4 @@
-"""
-MEMBER 2: Matatu state, keyboard controls, braking, lane changes, and reset.
-"""
+
 
 import time
 import pygame
