@@ -1,6 +1,4 @@
-"""
-MEMBER 4: Road, matatu, obstacle, and scene rendering.
-"""
+
 
 import pygame
 
