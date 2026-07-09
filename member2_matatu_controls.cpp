@@ -1,12 +1,11 @@
-// MEMBER 2: Matatu state, keyboard controls, braking, lane changes, and reset.
+
 #include "member2_matatu_controls.h"
 #include <algorithm>
 
 State state;
 std::set<std::string> keysDown;
 
-// Simple millisecond clock local to this module, mirroring performance.now()
-// usage in the JS version (used only for the lane-change cooldown).
+
 static sf::Clock laneClock;
 
 float laneCenter(int lane) {
