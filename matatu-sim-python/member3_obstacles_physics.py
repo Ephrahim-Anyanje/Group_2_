@@ -1,6 +1,4 @@
-"""
-MEMBER 3: Obstacle generation, physics update, camera detection, and collision logic.
-"""
+
 
 import random
 import pygame
