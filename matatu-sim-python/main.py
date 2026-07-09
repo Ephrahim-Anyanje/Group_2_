@@ -1,12 +1,4 @@
-"""
-Entry point for the Python port of the Autonomous Matatu Conductor
-Monitoring System. This plays the same role as index.html in the JS
-version: it loads each member's module in the required order and
-drives the main loop.
 
-Run with:
-    python main.py
-"""
 
 import sys
 import pygame
