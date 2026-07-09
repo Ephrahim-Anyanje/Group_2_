@@ -1,4 +1,4 @@
-// MEMBER 5: Conductor dashboard, camera feed, metrics, and game-over screen.
+
 #include "member5_dashboard_camera.h"
 #include <sstream>
 #include <iomanip>
