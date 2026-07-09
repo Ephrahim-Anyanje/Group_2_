@@ -1,4 +1,4 @@
-// MEMBER 4: Road, matatu, obstacle, and scene rendering.
+
 #include "member4_road_rendering.h"
 #include "member5_dashboard_camera.h"
 #include <algorithm>
