@@ -1,12 +1,11 @@
-// MEMBER 1: Project setup, window, constants, colors, and shared drawing helpers.
+
 #pragma once
 
 #include <SFML/Graphics.hpp>
 #include <string>
 #include <array>
 
-// ---- Base "canvas" size (everything is drawn at this resolution, then
-// scaled/letterboxed onto the real window, same idea as the JS canvas). ----
+
 constexpr float BASE_W = 1200.f;
 constexpr float BASE_H = 800.f;
 constexpr float LEFT_PANEL = 260.f;
@@ -30,7 +29,7 @@ constexpr float LANE_CHANGE_COOLDOWN = 120.f; // milliseconds
 constexpr float CROSSING_CLEAR_SPEED = 12.f;
 constexpr float CROSSING_CLEAR_DISTANCE = 90.f;
 
-// ---- Colors ----
+
 namespace C {
     inline sf::Color fromHex(unsigned int hex) {
         return sf::Color((hex >> 16) & 0xFF, (hex >> 8) & 0xFF, hex & 0xFF);
@@ -70,16 +69,16 @@ namespace C {
 
 inline const std::array<std::string, LANE_COUNT> lanes = {"LEFT", "CENTER", "RIGHT"};
 
-// ---- Font (shared, loaded once) ----
+
 sf::Font& gameFont();
 
-// ---- Window / render target shared by all members ----
+
 sf::RenderWindow& gameWindow();
-sf::RenderTexture& baseCanvas(); // fixed BASE_W x BASE_H drawing surface
+sf::RenderTexture& baseCanvas(); 
 
 void initWindow();
 
-// ---- Shared drawing helpers (equivalent of roundedRect/circle/text in JS) ----
+
 void roundedRect(sf::RenderTarget& target, float x, float y, float w, float h, float r,
                   const sf::Color* fill, const sf::Color* stroke = nullptr, float lineWidth = 1.f);
 
