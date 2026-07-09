@@ -1,10 +1,4 @@
-#!/usr/bin/env bash
-# Build the C++/SFML port of the Autonomous Matatu simulation.
-# Requires: g++ with C++17 support, libsfml-dev (SFML 2.5+)
-#
-# Ubuntu/Debian:
-#   sudo apt-get install libsfml-dev
-#
+
 set -e
 g++ -std=c++17 -O2 \
     member1_setup_config.cpp \
