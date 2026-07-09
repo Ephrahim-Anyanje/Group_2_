@@ -1,4 +1,4 @@
-// MEMBER 1: Project setup, window, constants, colors, and shared drawing helpers.
+
 #include "member1_setup_config.h"
 #include <cmath>
 #include <sstream>
@@ -10,7 +10,7 @@ sf::Font& gameFont() {
     static bool loaded = false;
     static sf::Font* active = &regular;
     if (!loaded) {
-        // Try a few common monospace font locations; fall back gracefully.
+
         const char* candidates[] = {
             "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf",
             "/usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf",
@@ -66,8 +66,7 @@ void initWindow() {
     gameFontBold();  // force-load bold
 }
 
-// Builds a rounded-rectangle polygon, matching the arcTo-based path used
-// in the JS roundedRect() helper (one shared shape, filled and/or outlined).
+
 static sf::ConvexShape buildRoundedRect(float x, float y, float w, float h, float r) {
     r = std::min(r, std::min(w, h) / 2.f);
     if (r < 0.f) r = 0.f;
@@ -139,8 +138,7 @@ void drawText(sf::RenderTarget& target, const std::string& value, float x, float
     } else {
         drawX = x - bounds.left;
     }
-    // SFML text glyphs have vertical padding baked into local bounds;
-    // nudge up slightly so size/position feel consistent with the JS canvas version.
+   
     text.setPosition(drawX, y - bounds.top * 0.15f);
 
     target.draw(text);
