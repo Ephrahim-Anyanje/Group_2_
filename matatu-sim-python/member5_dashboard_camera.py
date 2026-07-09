@@ -1,6 +1,4 @@
-"""
-MEMBER 5: Conductor dashboard, camera feed, metrics, and game-over screen.
-"""
+
 
 from member1_setup_config import (
     BASE_H, ROAD_X, ROAD_RIGHT, RIGHT_PANEL, LEFT_PANEL, LANE_COUNT, C, lanes,
